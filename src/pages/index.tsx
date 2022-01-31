@@ -1,11 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
-
-export const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`;
+import Head from 'next/head';
+import PageContent from '../styles/pages/Home.style';
 
 export default function Home() {
-  return <Title>Hello, World!</Title>;
+  return (
+    <>
+      <Head>
+        <title>Aluracord | Login</title>
+      </Head>
+
+      <PageContent>
+        <h1>Hello, World!</h1>
+      </PageContent>
+    </>
+  );
 }
